@@ -8,7 +8,9 @@ def guess_number():
     number = st.number_input("", min_value=1, max_value=10, step=1, key="number_input")
     if st.button("Guess"):
         if random.randint(1, 3) == number:
-            st.write("## 🎉🎂🎈 Happy Birthday! 🎈🎂🎉\ May all your dreams come true and may this year bring you lots of joy, happiness and success. \Enjoy your special day! 🎁🥳")
+            st.write("## 🎉🎂🎈 Happy Birthday! 🎈🎂🎉")
+            st.write("## May all your dreams come true and may this year bring you lots of joy, happiness and success. Enjoy your special day! 🎁🥳")
+            st.write("## Enjoy your special day! 🎁🥳")
             balloons_img = Image.open("balloons.jpg")
             balloons_img = Image.open("balloons.jpg")
             st.image(balloons_img, use_column_width=True)
